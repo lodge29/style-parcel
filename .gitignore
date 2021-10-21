@@ -1,0 +1,8 @@
+node_modules
+*.css
+.parcel-cache
+.cache
+build
+.DS_Store
+readme.pdf
+css
