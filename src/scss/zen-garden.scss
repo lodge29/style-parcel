@@ -9,6 +9,7 @@
 body {
     /* this is the page background */
     background-color: $color-5;
+<<<<<<< HEAD:src/scss/partials/zen-garden.scss
     font-size: 16px;
   }
   section header h1 {
@@ -25,3 +26,11 @@ body {
 
   }
   
+=======
+  }
+
+section header h1 {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+>>>>>>> 98717e7c80b936acb57922e891914c9db3580a55:src/scss/zen-garden.scss
