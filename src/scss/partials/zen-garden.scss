@@ -1,18 +1,27 @@
-$color-1: #5f8ee4; // Cornflower Blue - Action color
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
-$color-4: #e6e6e6; // light grey
-$color-5: #ffffff; // white
+@import "_breakpoints-zen-garden";
+@import '_colors-zen-garden.scss';
+@import "_fonts-zen-garden";
+@import "_prefix-mixins";
+@import "_reset";
 
-// additional colors
 
-$success: #6fce72; // green
-$alert: $color-3; // red
 
-// fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
 body {
     /* this is the page background */
     background-color: $color-5;
+    font-size: 16px;
   }
+  section header h1 {
+    color: $color-1;
+    font-family: $primary-font;
+    font-size: 32px;
+  }
+
+
+
+
+
+  @media screen and (min-width: $s) {
+
+  }
+  
