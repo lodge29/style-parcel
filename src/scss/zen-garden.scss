@@ -1,36 +1,40 @@
-@import "_breakpoints-zen-garden";
-@import '_colors-zen-garden.scss';
-@import "_fonts-zen-garden";
-@import "_prefix-mixins";
-@import "_reset";
+@import "partials/breakpoints-zen-garden";
+@import 'partials/colors-zen-garden';
+@import "partials/fonts-zen-garden";
+@import "partials/prefix-mixins";
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/layout";
 
 
 
 body {
     /* this is the page background */
     background-color: $color-5;
-<<<<<<< HEAD:src/scss/partials/zen-garden.scss
     font-size: 16px;
   }
   section header h1 {
     color: $color-1;
     font-family: $primary-font;
-    font-size: 32px;
+    font-size: 40px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    position: fixed;
+  left: 17%;
+  top: 25%;
+  font-size: 40px;
+  height: 150%;
+  }
+
+  .page-wrapper {
+    width: 40%;
+    display: block;
+    margin: auto;
+    background-color: $color-2;
+    padding: 25px;
   }
 
 
-
-
-
-  @media screen and (min-width: $s) {
+  @media screen and (min-width: $S) {
 
   }
-  
-=======
-  }
-
-section header h1 {
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-}
->>>>>>> 98717e7c80b936acb57922e891914c9db3580a55:src/scss/zen-garden.scss
