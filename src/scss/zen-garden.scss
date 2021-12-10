@@ -16,3 +16,8 @@ body {
     /* this is the page background */
     background-color: $color-5;
   }
+
+section header h1 {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
