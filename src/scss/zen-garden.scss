@@ -1,8 +1,10 @@
-@import "_breakpoints-zen-garden";
-@import '_colors-zen-garden.scss';
-@import "_fonts-zen-garden";
-@import "_prefix-mixins";
-@import "_reset";
+@import "partials/breakpoints-zen-garden";
+@import 'partials/colors-zen-garden';
+@import "partials/fonts-zen-garden";
+@import "partials/prefix-mixins";
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/layout";
 
 
 
@@ -10,22 +12,66 @@ body {
     /* this is the page background */
     background-color: $color-5;
     font-size: 16px;
+    padding: 5px;
   }
   section header h1 {
     color: $color-1;
     font-family: $primary-font;
-    font-size: 32px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    position: fixed;
+  left: 5%;
+  top: 25%;
+  font-size: 40px;
+  height: 150%;
   }
 
+  .page-wrapper {
+    width: 60%;
+    display: block;
+    margin: auto;
+    background-color: $color-2;
+    padding: 25px;
+    font-family: $secondary-font;
+  }
 
+  header {
+    padding: 10px;
+    margin: 10px;
+    color: $color-1;
+    border: 10px solid $color-3;
+  }
 
-  
-  
+  .summary {
+    text-align: center;
+  }
 
-section header h1 {
-  writing-mode: vertical-rl;
-  text-orientation: sideways;
-}
+  .summary p:nth-child(2) {
+    background-color: $color-4;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    font-family: $primary-font;
+  }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+    background-color: $color-1;
+    color: $color-5;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 35px;
+    font-family: $primary-font;
+  }
+
   a {
     color: $color-1;
   }
